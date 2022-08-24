@@ -1,4 +1,3 @@
-import './App.css';
 import { useState } from 'react';
 import styled from 'styled-components';
 
@@ -137,6 +136,7 @@ const ButtonContainer = styled.div`
   @media screen and (max-width: 1024px) {
     max-width: 500px;
     width: 100%;
+    margin: 0 auto;
   }
   @media screen and (max-width: 640px) {
     max-width: 98%;
