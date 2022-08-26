@@ -22,9 +22,9 @@ yarn dev
 ## :hammer_and_wrench: 적용 기술
 ### :zap: React
 - useState 기능을 이용하여 값을 계산하거나 리셋 지우기 기능을 구현하였습니다.
-- onClick 이벤트를 Button과 CalButton에 적용하여 계산식을 작성했습니다.
+- onClick 이벤트를 `Button`과 `CalButton`에 적용하여 계산식을 작성했습니다.
 - 자바스크립트 정규식을 사용하여 0으로 나눴을 때 경고창이 뜨도록 하였습니다.
 ### :zap: Styled Component
-- Styled Component를 이용하여 MainContainer, ButtonContainer, Button을 만들고 그에 맞는 Css를 추가하여 디자인하였습니다.
+- Styled Component를 이용하여 `MainContainer`, `ButtonContainer`, `Button`을 만들고 그에 맞는 CSS를 추가하여 디자인하였습니다.
 ### :zap: Vite
 - WebPack을 사용하는 대신 Vite라는 2세대 번들링 툴을 사용하여 서버에서 작동하는 JS의 크기를 줄이고 속도를 높였습니다.
