@@ -60,11 +60,11 @@ function App() {
         <h1>React 계산기</h1>
         <InputBar readOnly value={calc} />
         <ButtonContainer>
-          <Button onClick={allClear}>AC</Button>
-          <Button onClick={delCalc}>DEL</Button>
-          <CalButton value="%" onClick={getOper}>
+          <TopButton onClick={allClear}>AC</TopButton>
+          <TopButton onClick={delCalc}>DEL</TopButton>
+          <TopButton value="%" onClick={getOper}>
             %
-          </CalButton>
+          </TopButton>
           <CalButton value="÷" onClick={getOper}>
             ÷
           </CalButton>
@@ -128,30 +128,32 @@ const MainContainer = styled.div`
 const ButtonContainer = styled.div`
   display: grid;
   width: 40%;
-  max-width: 450px;
+  max-width: 475px;
   height: 50%;
   grid-template-columns: repeat(4, 1fr);
-  grid-column-gap: 10px;
-  grid-row-gap: 10px;
+  grid-gap: 10px;
   @media screen and (max-width: 1024px) {
-    max-width: 500px;
+    max-width: 400px;
     width: 100%;
     margin: 0 auto;
   }
   @media screen and (max-width: 640px) {
-    max-width: 98%;
-    width: 100%;
+    width: 98%;
+    height: 50%
   }
 `;
 
 const Button = styled.button`
-  background-color: #f2f3f5;
+  background-color: #333;
   border: none;
-  color: black;
-  font-size: 1.5rem;
-  border-radius: 35px;
+  color: #fff;
+  font-size: 2rem;
+  border-radius: 30px;
   cursor: pointer;
-  box-shadow: 3px 3px 3px lightgray;
+  transition: .5s;
+  &:hover {
+    background-image: linear-gradient(135deg, #f83600 0%, #f9d423 100%);
+  }
   &:active {
     margin-left: 2px;
     margin-top: 2px;
@@ -159,10 +161,12 @@ const Button = styled.button`
   }
 `;
 
+const TopButton = styled(Button)`
+  font-size: 1.75rem;
+`;
+
 const CalButton = styled(Button)`
-  font-size: 2rem;
-  color: white;
-  background-color: #4b89dc;
+  background-color: #f09a36;
 `;
 
 const ZeroButton = styled(Button)`
@@ -171,24 +175,23 @@ const ZeroButton = styled(Button)`
 
 const InputBar = styled.input`
   width: 40%;
-  max-width: 425px;
-  height: 65px;
-  margin-bottom: 10px;
+  max-width: 450px;
+  height: 75px;
+  margin-bottom: 25px;
   border-radius: 10px;
-  font-size: 30px;
-  border: 2px solid #4b89dc;
+  font-size: 32px;
+  border: none;
   text-align: right;
   padding-right: 20px;
   &:focus {
     outline: none;
   }
   @media screen and (max-width: 1024px) {
-    max-width: 460px;
-    width: 100%;
+    width: 380px;
   }
-  @media screen and (max-width: 640px) {
-    max-width: 90%;
-    width: 100%;
+  @media screen and (max-width: 480px) {
+    max-width: 98%;
+    width: 90%;
   }
 `;
 
