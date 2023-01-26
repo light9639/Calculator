@@ -1,7 +1,7 @@
 # :zap: Calculator 프로젝트 소개
 :octocat: 바로가기 https://light9639.github.io/Calculator/
 
-![화면 캡처 2022-08-22](https://raw.githubusercontent.com/light9639/Calculator/master/src/assets/light9639.github.io_Calculator_.png)
+![light9639 github io_Calculator_](https://user-images.githubusercontent.com/95972251/211260833-6ba22b74-e7d0-4f30-a7db-68df80256e95.png)
 
 :sparkles: React 계산기 사이트입니다. :sparkles:
 
